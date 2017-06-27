@@ -1,0 +1,31 @@
+/**
+* @file reset.css 浏览器默认样式重置与标准化
+* @author   zhaowei
+*/
+
+body, div, section, p, h1, h2, h3, h4, h5, h6, ul, li, form, input, label, legend, dd, dt, dl, header, footer, article, aside, option, select, button {
+    margin: 0;
+    padding: 0;
+    margin: 0;
+    font-weight: 400;
+    background: none;
+    border: none;
+    -webkit-appearance: none;    
+}
+
+ul, li, dl, dt, dd {
+    list-style: none;
+}
+
+div, span, ul, li, header, footer, button, a, input, select, textarea {
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent;
+    border-style: none;
+    outline-style: none;
+    outline: 0;
+}
+
+a {
+    text-decoration: none;
+}

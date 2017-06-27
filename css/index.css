@@ -1,0 +1,359 @@
+html,body {
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+    box-sizing: border-box;
+   /* overflow-x: hidden;*/
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-overflow-scrolling: touch;
+    overflow-scrolling: touch;
+    font-family: Microsoft Yahei,SimSun,Helvetica;
+}
+
+body > header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1.5rem;
+    position: fixed;
+    z-index: 2;
+}
+footer {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1.5rem;
+    position: fixed;
+    z-index: 2;
+    background-color: #005bac;
+    overflow: hidden;
+}
+
+.footer-left, .footer-right {
+    width: 20%;
+    float: left;
+    height: 100%;
+
+}
+.footer-left button, .footer-right button{
+    background-color: #084c88;
+}
+
+.footer-center {
+    height: 1.5rem;
+    line-height: 1.5rem;
+    width: 60%;
+    float: left;
+
+}
+
+.head-navigator {
+    width: 100%;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    background-color: #005bac;
+   /* overflow: hidden;*/
+}
+
+.head-navigator-left, .head-navigator-right {
+    width: 20%;
+    height: 100%;
+    float: left;
+}
+
+.head-navigator-center {
+    width: 60%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    color: #fff;
+}
+
+
+
+.head-title {
+     height: 100%;
+    text-align: center;
+    color: #fff;
+
+}
+
+  .text_more{
+
+    line-height: 25px;
+    padding: .1rem 0
+}
+
+.icon-list-ul:before {
+    content: "\f0ca";
+}
+
+
+.menu-more {
+    height: 100%;
+    padding-right: .5rem;
+    padding-left: .5rem;
+    box-sizing: border-box;
+}
+
+
+.right {
+    float: right;
+}
+
+.iconfont {
+    font-size: .8rem;
+    color: #fff;
+}
+.index-list{
+    /* width: 92%; */
+    height: 30%;
+    overflow: auto;
+    box-sizing: border-box;
+}
+.index-list table {
+    width: 100%;
+    display: table;
+}
+.index-list table tr{
+    width: 100%;
+    height: .8rem;
+    display: table-row;
+}
+.index-list table td{
+    width: 30%;
+    text-align: center;
+    padding: .2rem 0;
+    display: table-cell;
+}
+.index-list table .item-name{
+    word-wrap: break-word;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+}
+.list{
+    width: 96%;
+    overflow: auto;
+    padding: 1.5rem 0;
+    box-sizing: border-box;
+    margin: 0 2%;
+    height: auto;
+}
+.list table{
+    width: 100%;
+    border-collapse: collapse;
+}
+table .list-circle{
+    display: block;
+    box-sizing: border-box;
+    border-radius: 100%;
+    background-color:rgb(202, 56, 69);
+    -webkit-border-radius: 100%;
+    margin: 0 auto;
+    height: .5rem;
+    width: .5rem;
+
+}
+.list table .line{
+    height: .1rem;
+
+}
+.list table   .line1{
+    height: .1rem;
+    border-bottom: 1px solid #aaa89d;
+}
+.list table  .barLine{
+    height: .1rem;
+
+}
+.list table  .barLine1{
+    height: .1rem;
+    border-bottom: 1px solid #005bac;
+}
+
+ #top div{
+    font-size: .65rem;
+}
+
+td, .item-name, div ul li, h5{
+    font-size: .55rem;
+}
+
+.module , .circle .link span{
+    font-size: .6rem;
+}
+.num-top{
+    font-size: .55rem;
+}
+.delay-data{
+    font-size: .45rem;
+}
+.red_txt{
+    font-size: .5rem;
+}
+
+/* 兼容iphone5 */
+@media (device-height:568px) and (-webkit-min-device-pixel-ratio:2){
+    td, .item-name, div ul li, h5{
+        font-size: 18px;
+    }
+    .text_more{
+        line-height: 22px;
+    }
+    .num-top{
+        font-size: 18px;
+    }
+    .delay-data{
+        font-size: 14px;
+    }
+    .red_txt{
+        font-size: 1.6em;
+        color: #fa5527;
+        margin-left: 2px;
+    }
+    .module , .circle .link span{
+        font-size: 18px;
+    }
+
+   td, .item-name,div ul li{
+        font-size: 16px;
+    }
+
+}
+@media only screen and (max-device-width :480px){ }
+@media only screen and (min-device-width :481px){ }
+@media (min-device-width : 360px) and (max-device-width : 667px) and (-webkit-min-device-pixel-ratio : 2){
+    td, .item-name, div ul li, h5{
+        font-size: 20px;
+    }
+    .num-top{
+        font-size: 20px;
+    }
+    .delay-data{
+        font-size: 16px;
+    }
+    .red_txt{
+        font-size: 20px;
+    }
+    .module , .circle .link span{
+        font-size: 22px;
+    }
+}
+/*6*/
+@media (min-device-width : 375px) and (max-device-width : 667px) and (-webkit-min-device-pixel-ratio : 2){
+    td, .item-name, div ul li, h5{
+        font-size: 20px;
+    }
+    .text_more{
+        line-height: 26px;
+    }
+    .num-top{
+        font-size: 20px;
+    }
+    .delay-data{
+        font-size: 16px;
+    }
+    .red_txt{
+        font-size: 1.6em;
+        color: #fa5527;
+        margin-left: 2px;
+    }
+    .module , .circle .link span{
+        font-size: 22px;
+    }
+}
+/*6+*/
+@media (min-device-width : 414px) and (max-device-width : 736px) and (-webkit-min-device-pixel-ratio : 3){
+    td, .item-name, div ul li,h5{
+        font-size: 20px;
+    }
+   .num-top{
+        font-size: 22px;
+    }
+   .delay-data{
+       font-size: 18px;
+   }
+    .red_txt{
+        font-size: 24px;
+        color: #fa5527;
+        margin-left: 2px;
+    }
+   .module , .circle .link span{
+        font-size: 22px;
+    }
+}
+
+/*魅族*/
+@media only screen and (min-device-width :1080px) and (-webkit-min-device-pixel-ratio : 2.5){
+    td, .item-name, div ul li,h5{
+        font-size: 20px;
+    }}
+
+/*mate7*/
+@media only screen and (min-device-width :1080px) and (-webkit-min-device-pixel-ratio : 3){
+    td, .item-name, div ul li, h5{
+        font-size: 20px;
+    }}
+
+/*4 4s*/
+@media only screen and (device-height :480px) and (-webkit-device-pixel-ratio:2){
+    td, .item-name, div ul li,h5{
+        font-size: 20px;
+    }}
+
+
+
+.hide {
+    display: none;
+
+}
+.companys{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:1.5rem;
+    right: 0;
+    z-index:10;
+    background-color: #fff;
+     box-sizing:border-box;
+    -webkit-box-sizing: border-box;
+}
+.org{
+    background-color: #fff;
+}
+.companys  .org > ul {
+    position: absolute;
+    top: 0rem;
+    right: 0;
+    z-index: 100;
+    /* width:55%;*/
+    padding: .2rem;
+    /*    height: 100%;*/
+
+    background: #fff;
+}
+
+.companys  .org > ul > li {
+    padding: .1rem;
+    width: 100%;
+    /*   font-size: 2rem;*/
+
+}
+
+.companys .org > ul .group {
+    border-left: 3px solid #005bac;
+}
+
+.companys .org ul > li .li-item > li {
+    display: inline-block;
+    text-align: center;
+    padding: .1rem;
+    border: 1px solid #3385ff;
+    /*  background-color: #3385ff;*/
+    margin: .11rem;
+    border-radius: 4px;
+
+}
+
